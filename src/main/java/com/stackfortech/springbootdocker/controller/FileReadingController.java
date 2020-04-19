@@ -33,7 +33,7 @@ public class FileReadingController {
         }
         //writing to a file
         try {
-            FileWriter myWriter = new FileWriter("docker.txt");
+            FileWriter myWriter = new FileWriter(filename+"-out.txt");
             myWriter.write(message);
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
