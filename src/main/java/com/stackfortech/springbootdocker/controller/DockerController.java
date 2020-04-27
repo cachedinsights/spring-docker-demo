@@ -13,6 +13,7 @@ public class DockerController {
     public String hello(@RequestParam String name){
         return "Hello "+name+" from docker";
     }
+
     @GetMapping("/greet")
     public String greetings(@RequestParam String name){
         return "Greetings "+name + "I hope this tutorial is going smooth !! If Yes Please do subscribe :).";
